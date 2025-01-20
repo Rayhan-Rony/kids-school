@@ -7,10 +7,55 @@
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header class="quicksand-font">
+      <nav class="flex desktop-nav">
+        <div class="nav-item">
+          <div class="logo-container flex">
+            <div class="logo-img">
+              <img class="img-fluid" src="/assets/logo.png" alt="" />
+            </div>
+            <h3 class="logo-txt">SCHOOL</h3>
+          </div>
+        </div>
+        <div class="nav-item">
+          <ul class="flex">
+            <li class="nav-link bold txt-primary">
+              <a href="" class="txt-primary">Home</a>
+            </li>
+            <li class="nav-link medium">
+              <a href="" class="txt-secondary">About</a>
+            </li>
+            <li class="nav-link medium">
+              <a href="" class="txt-success">Facilities</a>
+            </li>
+            <li class="nav-link medium">
+              <a href="" class="txt-danger">Admission</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <button class="btn-primary medium">Contact</button>
+        </div>
+      </nav>
+      <!-- hamburger icon for mobile navbar  -->
+      <nav class="hide">
+        <div class="mobile-nav flex">
+          <div class="logo-img">
+            <img src="/assets/logo.png" alt="" />
+          </div>
+          <div class="hamburger-icon-container">
+            <p><i style="font-size: 2rem" class="fa-solid fa-bars"></i></p>
+          </div>
+        </div>
+      </nav>
     </header>
     <main></main>
     <footer></footer>
+
+    <!-- font awesome script tag  -->
+    <script
+      src="https://kit.fontawesome.com/a42df17dce.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
