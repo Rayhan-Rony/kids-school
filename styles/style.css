@@ -61,7 +61,7 @@
   width: 100%;
 }
 header,
-.main-container {
+.container {
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -73,13 +73,22 @@ header,
   color: #fff;
   font-size: 1.25rem;
 }
+.btn-secondary {
+  padding: 10px 47px;
+  background-color: #000;
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+}
 .hide {
   display: none;
 }
 .logo-container,
 #hero,
 .curriculum,
-.card {
+.card,
+#stories-section {
   justify-content: center;
   align-items: center;
 }
@@ -88,6 +97,11 @@ section {
 }
 .section-title {
   font-size: 2.9rem;
+}
+.curriculum,
+#stories-section {
+  flex-direction: column;
+  gap: 80px;
 }
 /* header style  */
 
@@ -120,14 +134,7 @@ nav,
 .hero-description {
   font-size: 1.25rem;
 }
-.hero-btn {
-  padding: 10px 47px;
-  background-color: #000;
-  border-radius: 12px;
-  border: none;
-  color: #fff;
-  font-size: 1.25rem;
-}
+
 .hero-content-left {
   flex-direction: column;
   gap: 24px;
@@ -138,10 +145,9 @@ main {
   /* background-image: url(/assets/bg.png); */
   background-image: url("/assets/bg.png");
 }
-.curriculum {
-  flex-direction: column;
-  gap: 80px;
-}
+
+/* curriculum section styles  */
+
 .curriculum-card-container {
   gap: 28px;
 }
@@ -186,6 +192,55 @@ main {
   background-color: transparent;
   border: none;
 }
+
+/* stories section styles */
+#stories-section-bg {
+  background: linear-gradient(
+    0deg,
+    rgba(254, 163, 1, 0.3),
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  padding-bottom: 60px;
+}
+.stories-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 19px;
+}
+.grid-item {
+  border-radius: 16px;
+  background-color: #fff;
+}
+.item-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#findOut-card {
+  padding: 58px 38px 34px 38px;
+}
+#findOut-card-title {
+  font-size: 1.5rem;
+}
+#findOut-card-info {
+  color: rgba(102, 102, 102, 1);
+  font-size: 0.9rem;
+  margin-top: 47px;
+}
+.grid-card-img-container > img {
+  border-radius: 16px 16px 0 0;
+}
+.grid-card-title {
+  padding: 43px 54px 33px 37px;
+  font-size: 0.9rem;
+}
+#stories-btn {
+  padding: 10px 60px;
+}
+/* .item-2,
+.item-3,
+.item-4,
+.item-5 {
+} */
 /* mobile responsive  related styles  */
 @media screen and (max-width: 576px) {
   .desktop-nav {
