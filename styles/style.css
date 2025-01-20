@@ -84,6 +84,9 @@ header,
 .hide {
   display: none;
 }
+.unhide {
+  display: block;
+}
 .logo-container,
 #hero,
 .curriculum,
@@ -165,6 +168,7 @@ main {
       rgba(255, 255, 255, 0) 40%
     ),
     rgb(255, 255, 255);
+  border: 1px solid rgba(222, 245, 255, 1);
 }
 .card-2 {
   background: linear-gradient(
@@ -173,6 +177,7 @@ main {
       rgba(255, 255, 255, 0) 40%
     ),
     rgb(255, 255, 255);
+  border: 1px solid rgba(255, 244, 220, 1);
 }
 .card-3 {
   background: linear-gradient(
@@ -181,6 +186,7 @@ main {
       rgba(255, 255, 255, 0) 40%
     ),
     rgb(255, 255, 255);
+  border: 1px solid rgba(242, 232, 255, 1);
 }
 .card-title {
   font-size: 1.5rem;
@@ -264,18 +270,32 @@ main {
   .hero-content-right img {
     width: 100%;
   }
-  .hero-btn {
+  .btn-secondary {
     font-size: 1rem;
     padding: 6px 24px;
   }
   .section-title {
     font-size: 1.8rem;
   }
-  .curriculum {
+  .curriculum,
+  #stories-section {
     gap: 0;
   }
   .curriculum-card-container {
     flex-direction: column;
+    transform: scale(0.9);
+  }
+  .unhide {
+    display: none;
+  }
+  #stories-section-bg {
+    padding: 40px 0;
+  }
+  #stories-section {
+    padding: 0;
+  }
+  .stories-grid-container {
+    grid-template-columns: repeat(2, 1fr);
     transform: scale(0.9);
   }
 }
