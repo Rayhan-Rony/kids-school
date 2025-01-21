@@ -201,6 +201,10 @@ main {
   background-color: transparent;
   border: none;
 }
+.middle-btn {
+  padding: 17px 20px;
+  border-radius: 50%;
+}
 
 /* stories section styles */
 #stories-section-bg {
@@ -228,7 +232,7 @@ main {
 }
 .grid-item-btn-container {
   position: absolute;
-  top: 195px;
+  top: 190px;
   left: 50px;
 }
 .grid-item-card-btn {
@@ -241,9 +245,15 @@ main {
   top: 423px;
   left: 38px;
 }
+.card-btn-primary {
+  background-color: rgba(149, 178, 38, 1);
+}
 
 .card-btn-secondary {
   background-color: rgba(60, 216, 232, 1);
+}
+.card-btn-success {
+  background-color: rgba(93, 88, 240, 1);
 }
 #findOut-card {
   padding: 58px 38px 34px 38px;
