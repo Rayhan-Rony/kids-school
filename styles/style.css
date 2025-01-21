@@ -278,6 +278,10 @@ footer {
   font-size: 1.25rem;
 }
 
+.marquee {
+  background-color: #000;
+  color: yellow;
+}
 /* mobile responsive  related styles  */
 @media screen and (max-width: 576px) {
   .desktop-nav {
