@@ -121,10 +121,12 @@ nav,
 .nav-item > ul {
   gap: 32px;
 }
-.nav-link {
+.nav-link,
+.footer-link {
   list-style-type: none;
 }
-.nav-link a {
+.nav-link a,
+.footer-link a {
   text-decoration: none;
 }
 /* hero section styles  */
@@ -242,11 +244,40 @@ main {
 #stories-btn {
   padding: 10px 60px;
 }
-/* .item-2,
-.item-3,
-.item-4,
-.item-5 {
-} */
+
+/* footer related style  */
+footer {
+  padding: 123px 228px 174px 140px;
+  gap: 127px;
+  color: #fff;
+  background-color: rgba(1, 172, 253, 1);
+}
+.footer-logo-container {
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-title {
+  font-size: 2.5rem;
+  padding-bottom: 35px;
+}
+.footer-subtitle {
+  font-size: 1.6rem;
+
+  padding-bottom: 35px;
+}
+.footer-info {
+  font-size: 1.25rem;
+}
+.footer-link-container {
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-link a {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
 /* mobile responsive  related styles  */
 @media screen and (max-width: 576px) {
   .desktop-nav {
@@ -297,5 +328,13 @@ main {
   .stories-grid-container {
     grid-template-columns: repeat(2, 1fr);
     transform: scale(0.9);
+  }
+  footer {
+    flex-direction: column;
+    gap: 32px;
+    padding: 25px 16px 60px 16px;
+  }
+  .footer-info {
+    text-align: justify;
   }
 }
