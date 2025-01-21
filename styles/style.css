@@ -113,6 +113,7 @@ nav,
 .mobile-nav {
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
 }
 .mobile-nav {
   padding: 12px;
@@ -218,10 +219,31 @@ main {
 .grid-item {
   border-radius: 16px;
   background-color: #fff;
+  position: relative;
 }
+
 .item-1 {
   grid-column: span 2;
   grid-row: span 2;
+}
+.grid-item-btn-container {
+  position: absolute;
+  top: 195px;
+  left: 50px;
+}
+.grid-item-card-btn {
+  color: #fff;
+  border: none;
+  padding: 14px 19px;
+  border-radius: 47px;
+}
+.first-card-btn {
+  top: 423px;
+  left: 38px;
+}
+
+.card-btn-secondary {
+  background-color: rgba(60, 216, 232, 1);
 }
 #findOut-card {
   padding: 58px 38px 34px 38px;
@@ -332,6 +354,11 @@ footer {
   .stories-grid-container {
     grid-template-columns: repeat(2, 1fr);
     transform: scale(0.9);
+  }
+  .grid-item-btn-container {
+    transform: scale(0.8);
+    top: 90px;
+    left: 5px;
   }
   footer {
     flex-direction: column;
